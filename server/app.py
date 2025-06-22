@@ -17,8 +17,8 @@ class Home(Resource):
 api.add_resource(Home, '/', endpoint='home')
 api.add_resource(Register, '/register', endpoint='register')
 api.add_resource(Login, '/login', endpoint='login')
-api.add_resource(GuestList, '/guests')
-api.add_resource(CreateAppearance, '/appearances')
+api.add_resource(GuestList, '/guests', endpoint='guest_list')
+api.add_resource(CreateAppearance, '/appearances', endpoint='create_appearance')
 api.add_resource(Episodes, '/episodes', endpoint='episodes')
 api.add_resource(EpisodeByID, '/episodes/<int:id>', endpoint='episode_by_id')
 
