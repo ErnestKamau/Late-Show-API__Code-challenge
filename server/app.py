@@ -3,7 +3,7 @@
 from flask import make_response, jsonify, request, session
 from flask_restful import Resource
 from config import app, db, api
-
+from models import User, Guest, Episode, Appearance
 
 class Home(Resource):
     def get(self):
