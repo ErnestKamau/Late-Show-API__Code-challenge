@@ -12,6 +12,7 @@ psycopg2-binary = "*"
 flask-restful = "*"
 flask-bcrypt = "*"
 python-dotenv = "*"
+sqlalchemy-serializer = "*"
 
 [dev-packages]
 
