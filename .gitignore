@@ -1,0 +1,55 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (if used outside pipenv)
+venv/
+ENV/
+env/
+.venv/
+
+# Pipenv
+Pipfile.lock
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Flask-specific
+instance/
+*.db
+*.sqlite3
+
+# PostgreSQL backups or local dumps
+*.sql
+*.dump
+
+# Alembic/Flask-Migrate (ignore local migration history if not tracking)
+migrations/
+
+# Pytest / test cache
+.pytest_cache/
+.coverage
+*.cover
+.cache
+
+# Coverage reports
+htmlcov/
+coverage.xml
+
+# Logs
+*.log
+
+# IDE/editor configs
+.vscode/
+.idea/
+
+# System files (Linux-friendly)
+*~
+*.swp
+*.swo
+.directory
+
+# Optional: Ignore Postman collections if not sharing them
+# challenge-4-lateshow.postman_collection.json
