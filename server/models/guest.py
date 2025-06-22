@@ -1,7 +1,7 @@
 from sqlalchemy_serializer import SerializerMixin
 from config import db
 
-class Geust(db.Model, SerializerMixin):
+class Guest(db.Model, SerializerMixin):
     __tablename__ = 'geusts'
     
     id = db.Column(db.Integer, primary_key=True)
