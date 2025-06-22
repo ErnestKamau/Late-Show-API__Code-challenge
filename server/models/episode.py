@@ -9,7 +9,8 @@ class Episode(db.Model, SerializerMixin):
     date = db.Column(db.String, nullable=False)
     number = db.Column(db.Integer, nullable=False)
     
-    appearances = db.relationship("Appearance", backref="episode", cascade="all, delete")
+    appearances = db.relationship('Appearance', back_populates='episode', cascade="all, delete")
+    
     
     def __repr__(self):
         return f"<Episode #{self.number} on {self.date}>"

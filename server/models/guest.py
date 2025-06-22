@@ -8,7 +8,7 @@ class Guest(db.Model, SerializerMixin):
     name = db.Column(db.String, nullable=False)
     occupation = db.Column(db.String, nullable=False)
     
-    appearances = db.relationship("Appearance", backref="guest", cascade="all, delete")
+    appearances = db.relationship('Appearance', back_populates='guest', cascade="all, delete")
     
     
     def __repr__(self):

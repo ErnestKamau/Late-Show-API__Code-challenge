@@ -10,7 +10,11 @@ class Appearance(db.Model, SerializerMixin):
     guest_id = db.Column(db.Integer, db.ForeignKey('guests.id'), nullable=False)
     episode_id = db.Column(db.Integer, db.ForeignKey('episodes.id'), nullable=False)
 
+    guest = db.relationship('Guest', back_populates='appearances')
+    episode = db.relationship('Episode', back_populates='appearances')
     
+    serialize_rules = ('-guest.appearances', '-episode.appearances')
+
 
     def __repr__(self):
         return f"<Appearance GuestID={self.guest_id} EpisodeID={self.episode_id} Rating={self.rating}>"
