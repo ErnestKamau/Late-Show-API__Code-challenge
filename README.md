@@ -36,7 +36,7 @@ A RESTful Flask API for managing a Late Night TV Show system, including Guests, 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/late-show-api-challenge.git
+git clone https://github.com/ErnestKamau/Late-Show-API__Code-challenge.git
 cd late-show-api-challenge
 ```
 
@@ -194,18 +194,8 @@ Value: Bearer <your-token>
 
 ##  GitHub Repository
 
-- [https://github.com/<your-username>/late-show-api-challenge](https://github.com/<your-username>/late-show-api-challenge)
+- [https://github.com/ErnestKamau/Late-Show-API__Code-challenge.git](https://github.com/ErnestKamau/Late-Show-API__Code-challenge.git)
 
 ---
 
-##  Submission Checklist
 
-* [x] MVC folder structure
-* [x] PostgreSQL used (no SQLite)
-* [x] Models and validations complete
-* [x] JWT authentication implemented
-* [x] Protected routes working
-* [x] Seed data script functional
-* [x] All routes tested with Postman
-* [x] Clean and complete README
-* [x] GitHub repo pushed and shared
