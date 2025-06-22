@@ -4,13 +4,15 @@ from flask import make_response, jsonify, request, session
 from flask_restful import Resource
 from config import app, db, api
 from models import User, Guest, Episode, Appearance
-
+from controllers.auth_controller import Register, Login
 class Home(Resource):
     def get(self):
         return make_response({"message": "Welcome to the Late Show API"}, 200)
 
 
 api.add_resource(Home, '/', endpoint='home')
+api.add_resource(Register, '/register', endpoint='register')
+api.add_resource(Login, '/login', endpoint='login')
 
 
 if __name__ == '__main__':
